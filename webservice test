@@ -1,0 +1,33 @@
+import requests 
+import json
+import re
+
+def test():
+    # testing of Geocode service with GET\
+    location = "University of Technology, Sydney"     # Search address, edit this to test other location
+    url = "http://maps.googleapis.com/maps/api/geocode/json"
+    expectedaddress  = "15 Broadway, Ultimo NSW 2007, Australia"
+    param  = {'address':location}
+    r = requests.get(url = url, params = param)
+    data = r.json()
+    returned_address = data['results'][0]['formatted_address']
+    if returned_address != expectedaddress:
+        print("Test failed: Address didn't match address reurned is %s  expected %d" %(returned_address, expectedaddress) )
+    else:
+        print("Test passed: Address matched %s" %(expectedaddress))
+
+    # testing of Wiki API Search with POST
+    keyword = "JSON"      # Search string, edit this to test otherstring
+    req = requests.post('https://en.wikipedia.org/w/index.php', data = {'search':'%s' %(keyword)})
+    test  = 0
+    for chunk in req.iter_content(chunk_size=10000):
+            if(re.search('"wgPageName":"%s","wgTitle":"%s"' % (keyword, keyword),  str(chunk))):
+                test = 1
+    if test==1:
+        print ("Test passed:page title, page name, and search string matched: %s" %(keyword))
+    else:
+        print ("Test faliled:page title, page name, and search string didn't match, check the spelling or refine your keyword: %s"  %(keyword))
+        
+      
+if __name__ == "__main__":
+    test()
