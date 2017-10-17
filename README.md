@@ -18,6 +18,6 @@ GUItest\src\guiTest
 
 -Test.xml
 
-This program takes parameters from Test.xml file. To change browser, changes the browser parameter in Test.xml and run the test as TestNG test.
+This program takes parameters from Test.xml file. To change browser, changes the browser parameter in Test.xml and run the test as TestNG test. Test result can be found under test-output/TestSuite folder.
 
 
