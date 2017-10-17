@@ -16,6 +16,6 @@ Testcase1.java
 Test.xml
 
 
-This program support testing on multiple browsers to change the browser, changes the browser parameter in Test.xml and run the test as TestNG test.
+This program takes parameters from Test.xml file. To change browser, changes the browser parameter in Test.xml and run the test as TestNG test.
 
 
