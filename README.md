@@ -7,13 +7,13 @@ It uses params.py to get test data and generates TestResult.txt for test results
 
 GUItest\src\guiTest
 
-Base.java
+-Base.java
 
-PageObject_Site1.java
+-PageObject_Site1.java
 
-Testcase1.java
+-Testcase1.java
 
-Test.xml
+-Test.xml
 
 
 This program takes parameters from Test.xml file. To change browser, changes the browser parameter in Test.xml and run the test as TestNG test.
