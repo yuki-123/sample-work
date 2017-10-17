@@ -5,6 +5,12 @@ webservice.py: Demonstrate GET and POST request testing of any open REST service
 It uses params.py to get test data and generates TestResult.txt for test results.
 
 
-guitest.py: Demonstrate launching a web page in browser and doing basic operations like sending text, clicking on an element etc.
+GUItest\src\guiTest 
+Base.java
+PageObject_Site1.java 
+Testcase1.java  
+Test.xml
 
-To run guitest.py, please change self.path to the local location of Chrome driver
+This program support testing on multiple browsers to change the browser, changes the browser parameter in Test.xml and run the test as TestNG test.
+
+
