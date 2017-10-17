@@ -5,7 +5,7 @@ webservice.py: Demonstrate GET and POST request testing of any open REST service
 It uses params.py to get test data and generates TestResult.txt for test results.
 
 
-GUItest\src\guiTest 
+GUItest\src\guiTest\ 
 Base.java
 PageObject_Site1.java 
 Testcase1.java  
