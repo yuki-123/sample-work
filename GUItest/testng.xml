@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Suite">
+	<parameter name="browser" value="Chrome"/>
+	<test name="GUI Testing1">
+	<parameter name="keyword1" value="python" />
+	<parameter name="pythonVersion" value="Python 3.6.3"/>
+       <parameter name="keyword2" value="mailing list" />
+		<classes>
+			<class name="guiTest.TestCase1" />
+		</classes>
+	</test>
+</suite>
